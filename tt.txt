@@ -1,0 +1,32 @@
+
+
+https://europixhd.com/movies/mission-impossible-fallout-2018-online-free-hd-with-subtitles-europix
+const int buttonPin=PUSH2;
+
+int buttonState=0;
+void setup() {
+  // put your setup code here, to run once:
+pinMode(RED_LED,OUTPUT);
+pinMode(GREEN_LED,OUTPUT);
+pinMode(buttonPin,INPUT_PULLUP);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly: 
+  buttonState=digitalRead(buttonPin);
+  if(buttonState==LOW){
+ 
+  digitalWrite(RED_LED,HIGH);
+  delay(100);
+  digitalWrite(RED_LED,LOW);
+  delay(50);
+  }
+   if(buttonState==HIGH){
+  
+  digitalWrite(GREEN_LED,HIGH);
+  delay(100);
+  digitalWrite(GREEN_LED,LOW);
+  delay(50);
+  }
+// 
+}
